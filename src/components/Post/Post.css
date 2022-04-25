@@ -1,0 +1,9 @@
+.custom-card {
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+    margin-bottom: 3rem;
+}
+
+.custom-card > img {
+    height: 30rem;
+    object-fit: cover;
+}

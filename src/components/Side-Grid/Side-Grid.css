@@ -1,0 +1,19 @@
+.card-list-custom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-pop {
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.lgi-custom {
+    display: flex !important;
+    flex-direction: row !important;
+}
+
+.li-desc {
+    margin-left: 1rem;
+}
