@@ -1,23 +1,20 @@
 import React from 'react';
 import './Navbar.css';
-// import { Link } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({ category }) => {
+
+    
   return (
     <nav>
-        <ul class="nav justify-content-end">
+        <ul className="nav justify-content-end">
             <li className="nav-item">
                 <b className="nav-link disabled">Catégories</b>
             </li>
-            <li className="nav-item">
-                <b className="nav-link active">Catégorie 1</b>
+            {category.map(cat => (
+                <li key={cat._id} className="nav-item">
+                <b className="nav-link active"> {cat.title} </b>
             </li>
-            <li className="nav-item">
-                <b className="nav-link">Catégorie 2</b>
-            </li>
-            <li className="nav-item">
-                <b className="nav-link">Catégorie 3</b>
-            </li>
+            ))}
         </ul>
     </nav>
   )
